@@ -61,3 +61,6 @@ WHERE siswa_id = 1 AND mata_pelajaran = 'Fisika';
 
 INSERT INTO siswa (nama, umur, jurusan) VALUES ("Farhan", 18, "IPA");
 INSERT INTO nilai (siswa_id, mata_pelajaran, nilai) VALUES (6, "Biologi", 89);
+
+UPDATE siswa SET jurusan = "IPS" WHERE nama = "Farhan";
+DELETE FROM nilai WHERE siswa_id = 6 AND mata_pelajaran = "Biologi";
